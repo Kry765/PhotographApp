@@ -12,7 +12,7 @@ export const NavigationWrapper = () => (
     <PhotographName NamePhoto={NamePhoto} />
     <div className={styled.navWrapper}>
       <NavigationItem MenuElement={MenuElement} />
-      <MdMenu />
+      <MdMenu className={styled.BurgerMenu} />
     </div>
   </>
 );
