@@ -1,10 +1,27 @@
-.topMenu {
+.topMenuDesktop {
   padding: 1em 0.6em;
   display: block;
 }
 
+.topMenuMobile {
+  display: none;
+}
+
+.topMenuLink {
+  text-decoration: none;
+  color: #000;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
 @media (max-width: 776px) {
-  .topMenu {
+  .topMenuDesktop {
     display: none;
+  }
+  .topMenuMobile {
+    position: fixed;
+    padding: 1em 0.6em;
   }
 }
